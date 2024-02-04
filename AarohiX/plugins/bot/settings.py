@@ -109,7 +109,7 @@ async def gib_repo_callback(_, callback_query):
 
 owner_button = inlinekeyboardbutton("• ᴏᴡɴᴇʀ •", user_id=config.OWNER_ID)
 repo_button = inlinekeyboardbutton("• ʀᴇᴘᴏ •", url=config.UPSTREAM_REPO)
-close_button = inlinekeyboardbutton(• ᴄʟᴏsᴇ •",  callback_data=f"close")
+close_button = inlinekeyboardbutton("• ᴄʟᴏsᴇ •",  callback_data=f"close")
 back_button = InlineKeyboardButton("• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")
 
 
