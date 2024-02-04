@@ -107,10 +107,10 @@ async def gib_repo_callback(_, callback_query):
         ),
     )
 
-owner_button = InlineKeyboardMarkup("• ᴏᴡɴᴇʀ •", url="https://t.me/ABOUT_SASHIKANT")
-repo_button = InlineKeyboardMarkup("• ʀᴇᴘᴏ •", url="HTTPS://GITHUB.COM/THEMADMAXPRO/AAROHIMUSIC")
-close_button = InlineKeyboardMarkup("• ᴄʟᴏsᴇ •",  callback_data=f"close")
-back_button = InlineKeyboardMarkup("• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")
+owner_button = InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/ABOUT_SASHIKANT")
+repo_button = InlineKeyboardButton("• ʀᴇᴘᴏ •", url="HTTPS://GITHUB.COM/THEMADMAXPRO/AAROHIMUSIC")
+close_button = InlineKeyboardButton("• ᴄʟᴏsᴇ •",  callback_data=f"close")
+back_button = InlineKeyboardButton("• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")
 
 
 @app.on_callback_query(filters.regex("^bot_info_data$"))
