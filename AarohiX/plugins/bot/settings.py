@@ -107,10 +107,10 @@ async def gib_repo_callback(_, callback_query):
         ),
     )
 
-owner_button = inlinekeyboardbutton("• ᴏᴡɴᴇʀ •", user_id=config.OWNER_ID)
-repo_button = inlinekeyboardbutton("• ʀᴇᴘᴏ •", url=config.UPSTREAM_REPO)
-close_button = inlinekeyboardbutton("• ᴄʟᴏsᴇ •",  callback_data=f"close")
-back_button = InlineKeyboardButton("• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")
+owner_button = InlineKeyboardMarkup("• ᴏᴡɴᴇʀ •", user_id=config.OWNER_ID)
+repo_button = InlineKeyboardMarkup("• ʀᴇᴘᴏ •", url=config.UPSTREAM_REPO)
+close_button = InlineKeyboardMarkup("• ᴄʟᴏsᴇ •",  callback_data=f"close")
+back_button = InlineKeyboardMarkup("• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")
 
 
 @app.on_callback_query(filters.regex("^bot_info_data$"))
