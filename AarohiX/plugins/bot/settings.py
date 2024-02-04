@@ -96,22 +96,15 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
 @app.on_callback_query(filters.regex("gib_source"))
 async def gib_repo_callback(_, callback_query):
     await callback_query.edit_message_media(
-        media=InputMediaVideo("https://telegra.ph/file/2cfba561b134f5738849d.mp4"),
+        media=InputMediaVideo("https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4", has_spoiler=True),
         reply_markup=InlineKeyboardMarkup(
             [
-                [owner_button]
-                [repo_button]
                 [close_button]
-                [back_button]
             ]
         ),
     )
 
-owner_button = InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/ABOUT_SASHIKANT")
-repo_button = InlineKeyboardButton("• ʀᴇᴘᴏ •", url="HTTPS://GITHUB.COM/THEMADMAXPRO/AAROHIMUSIC")
-close_button = InlineKeyboardButton("• ᴄʟᴏsᴇ •",  callback_data=f"close")
-back_button = InlineKeyboardButton("• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")
-
+close_button = InlineKeyboardButton("• ᴄʟᴏsᴇ •", callback_data="close")
 
 @app.on_callback_query(filters.regex("^bot_info_data$"))
 async def show_bot_info(c: app, q: CallbackQuery):
