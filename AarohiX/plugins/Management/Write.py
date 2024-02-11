@@ -4,7 +4,7 @@ from config import  BOT_USERNAME
 from AarohiX import app
 import requests
 
-@app.on_message(filters.command("write"))
+@app.on_message(filters.command("writes"))
 async def handwrite(_, message: Message):
     if message.reply_to_message:
         text = message.reply_to_message.text
