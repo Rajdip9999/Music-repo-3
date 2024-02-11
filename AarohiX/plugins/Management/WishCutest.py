@@ -4,7 +4,7 @@ import random
 import requests
 from AarohiX import app 
 
-SUPPORT_CHAT = "voiceofheart0"
+SUPPORT_CHAT = "lucifar_music"
 
 @app.on_message(filters.command("wish"))
 async def wish(_, m):
