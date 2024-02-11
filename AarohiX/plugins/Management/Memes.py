@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 import requests
 from AarohiX import app 
 
-@app.on_message(filters.command("meme"))
+@app.on_message(filters.command("memes"))
 def meme_command(client, message):
     api_url = "https://meme-api.com/gimme"
 
