@@ -42,8 +42,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/STATUSDAIRY2")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/VOICEOFHEART0")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/lucifar_music")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Stranger_think")
 
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", "True")
@@ -86,21 +86,21 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/3eed0db3b21efdcc2d055.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/b64a324639c4441284d69.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/43acb316e80a3dd1b04ed.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/40edf97c2c0dbfcb400ac.jpg"
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
-STATS_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/21b46a513182d1037f706.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/3d00930a16f144798c9b6.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/file/73593980e50cb39f8be86.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph/file/9ce9e35545951e2013b97.jpg"
+STREAM_IMG_URL = "https://telegra.ph/file/86ed2d3a750250244bf2f.jpg"
+SOUNCLOUD_IMG_URL = "https://telegra.ph/file/6e4436a6d5757525d1d60.jpg"
+YOUTUBE_IMG_URL = "https://telegra.ph/file/6e4436a6d5757525d1d60.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/fd941cbd93a3a778bbf21.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/3d00930a16f144798c9b6.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/21b46a513182d1037f706.jpg"
 
 def time_to_seconds(time):
     stringt = str(time)
